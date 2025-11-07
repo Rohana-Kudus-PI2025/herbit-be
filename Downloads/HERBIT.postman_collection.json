@@ -1,0 +1,1900 @@
+{
+	"info": {
+		"_postman_id": "18e73855-1b70-4c0d-b219-4c4a3dac328a",
+		"name": "HERBIT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47645269",
+		"_collection_link": "https://www.postman.com/bluehoneygee-6713842/workspace/bluehoney-gee-s-workspace/collection/47645269-18e73855-1b70-4c0d-b219-4c4a3dac328a?action=share&source=collection_link&creator=47645269"
+	},
+	"item": [
+		{
+			"name": "Public",
+			"item": [
+				{
+					"name": "daily tasks",
+					"item": [
+						{
+							"name": "get daily tasks",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/daily",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"daily"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "vouchers",
+					"item": [
+						{
+							"name": "get all vouchers (active)",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"slug\": \"voucher-hemat-10\",\n  \"name\": \"Voucher Hemat 10%\",\n  \"description\": \"Diskon 10% untuk belanja ramah lingkungan.\",\n  \"category\": \"eco-action\",\n  \"pointsRequired\": 300,\n  \"stock\": 25,\n  \"isActive\": true,\n  \"validFrom\": \"2024-05-01T00:00:00.000Z\",\n  \"validUntil\": \"2024-06-30T23:59:59.000Z\",\n  \"imageUrl\": \"https://res.cloudinary.com/dekneh9fy/image/upload/v1761808883/49c15469-1186-4d27-a6ff-1c05226e7421_xixa5g.jpg\",\n  \"bannerUrl\": \"https://res.cloudinary.com/dekneh9fy/image/upload/v1761808883/49c15469-1186-4d27-a6ff-1c05226e7421_xixa5g.jpg\",\n  \"partnerName\": \"Alner\",\n  \"discountValue\": \"10%\",\n  \"landingUrl\": \"https://example.com/promo\",\n  \"terms\": [\n    \"Berlaku untuk produk ramah lingkungan.\",\n    \"Tidak dapat digabung dengan promo lain.\"\n  ],\n  \"instructions\": [\n    \"Tukar voucher pada halaman profil.\",\n    \"Gunakan kode saat checkout.\"\n  ],\n  \"metadata\": {\n    \"color\": \"#00AA55\"\n  }\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/vouchers",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vouchers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get detail by id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"slug\": \"voucher-hemat-10\",\n  \"name\": \"Voucher Hemat 10%\",\n  \"description\": \"Diskon 10% untuk belanja ramah lingkungan.\",\n  \"category\": \"eco-action\",\n  \"pointsRequired\": 300,\n  \"stock\": 25,\n  \"isActive\": true,\n  \"validFrom\": \"2025-10-01T00:00:00.000Z\",\n  \"validUntil\": \"2025-11-30T23:59:59.000Z\",\n  \"imageUrl\": \"https://res.cloudinary.com/dekneh9fy/image/upload/v1761808883/49c15469-1186-4d27-a6ff-1c05226e7421_xixa5g.jpg\",\n  \"bannerUrl\": \"https://res.cloudinary.com/dekneh9fy/image/upload/v1761808883/49c15469-1186-4d27-a6ff-1c05226e7421_xixa5g.jpg\",\n  \"partnerName\": \"Alner\",\n  \"discountValue\": \"10%\",\n  \"landingUrl\": \"https://example.com/promo\",\n  \"terms\": [\n    \"Berlaku untuk produk ramah lingkungan.\",\n    \"Tidak dapat digabung dengan promo lain.\"\n  ],\n  \"instructions\": [\n    \"Tukar voucher pada halaman profil.\",\n    \"Gunakan kode saat checkout.\"\n  ],\n  \"metadata\": {\n    \"color\": \"#00AA55\"\n  }\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/vouchers/69031e6f3f84647e96084928",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vouchers",
+										"69031e6f3f84647e96084928"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get detail by slung",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"slug\": \"voucher-hemat-10\",\n  \"name\": \"Voucher Hemat 10%\",\n  \"description\": \"Diskon 10% untuk belanja ramah lingkungan.\",\n  \"category\": \"eco-action\",\n  \"pointsRequired\": 300,\n  \"stock\": 25,\n  \"isActive\": true,\n  \"validFrom\": \"2025-10-01T00:00:00.000Z\",\n  \"validUntil\": \"2025-11-30T23:59:59.000Z\",\n  \"imageUrl\": \"https://res.cloudinary.com/dekneh9fy/image/upload/v1761808883/49c15469-1186-4d27-a6ff-1c05226e7421_xixa5g.jpg\",\n  \"bannerUrl\": \"https://res.cloudinary.com/dekneh9fy/image/upload/v1761808883/49c15469-1186-4d27-a6ff-1c05226e7421_xixa5g.jpg\",\n  \"partnerName\": \"Alner\",\n  \"discountValue\": \"10%\",\n  \"landingUrl\": \"https://example.com/promo\",\n  \"terms\": [\n    \"Berlaku untuk produk ramah lingkungan.\",\n    \"Tidak dapat digabung dengan promo lain.\"\n  ],\n  \"instructions\": [\n    \"Tukar voucher pada halaman profil.\",\n    \"Gunakan kode saat checkout.\"\n  ],\n  \"metadata\": {\n    \"color\": \"#00AA55\"\n  }\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/vouchers/slug/voucher-avoska-50k",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vouchers",
+										"slug",
+										"voucher-avoska-50k"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "profile",
+					"item": [
+						{
+							"name": "username availability",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"anggi@mail.com\",\n  \"password\": \"admin123\"\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/profile/username-availability?username=@suci",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"profile",
+										"username-availability"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "@suci"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "username suggestions",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"anggi@mail.com\",\n  \"password\": \"admin123\"\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/users/username-suggestions",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"users",
+										"username-suggestions"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "rewards",
+					"item": [
+						{
+							"name": "get all rewards (active)",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"anggi@mail.com\",\n  \"password\": \"admin123\"\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/rewards",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"rewards"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get detail by id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"code\": \"eco-7\",\n  \"name\": \"Reward Konsisten 7 Hari\",\n  \"description\": \"Bonus poin setelah 7 hari berturut-turut setor sampah.\",\n  \"pointsReward\": 100,\n  \"targetDays\": 7,\n  \"isActive\": true,\n  \"image\": \"https://example.com/rewards/eco-30.png\"\n}\n"
+								},
+								"url": {
+									"raw": "{{base_url}}/rewards/69037be197f7e54e918b5936",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"rewards",
+										"69037be197f7e54e918b5936"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// ===== Save user_token & auto-switch role =====",
+									"let token;",
+									"const cookieHeader = pm.response.headers.get(\"Set-Cookie\");",
+									"",
+									"if (cookieHeader) {",
+									"  const cookieName = pm.collectionVariables.get(\"cookie_name\") || \"access_token\";",
+									"  const m = cookieHeader.match(new RegExp(`${cookieName}=([^;]+)`));",
+									"  if (m) token = m[1];",
+									"}",
+									"",
+									"// Fallback jika token juga ada di JSON body",
+									"try {",
+									"  const json = pm.response.json();",
+									"  if (!token && (json?.token || json?.data?.token)) {",
+									"    token = json.token || json.data.token;",
+									"  }",
+									"} catch (e) {}",
+									"",
+									"if (token) {",
+									"  pm.collectionVariables.set(\"user_token\", token);",
+									"  pm.collectionVariables.set(\"auth_role\", \"user\"); // AUTO switch ke user",
+									"  console.log(\"✅ user_token saved & role switched to user\");",
+									"} else {",
+									"  console.warn(\"⚠️ Token not found in response for user login\");",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"anggi@mail.com\",\n  \"password\": \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "vouchers",
+					"item": [
+						{
+							"name": "create voucher",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"slug\": \"voucher-hemat-testing\",\n  \"name\": \"Voucher Hemat 10%\",\n  \"description\": \"Diskon 10% untuk produk ramah lingkungan.\",\n  \"category\": \"eco-action\",\n  \"pointsRequired\": 300,\n  \"stock\": 100,\n  \"redeemedCount\": 0,\n  \"isActive\": true,\n  \"status\": \"active\",\n  \"validFrom\": \"2025-10-01T00:00:00.000Z\",\n  \"validUntil\": \"2025-11-30T23:59:59.000Z\",\n  \"imageUrl\": \"https://cdn.herbit.id/vouchers/voucher-hemat-card.png\",\n  \"bannerUrl\": \"https://cdn.herbit.id/vouchers/voucher-hemat-banner.png\",\n  \"partnerName\": \"EcoMart\",\n  \"discountValue\": \"10%\",\n  \"landingUrl\": \"#\",\n  \"terms\": [\n    \"Berlaku untuk produk ramah lingkungan.\",\n    \"Tidak dapat digabung dengan promo lain.\"\n  ],\n  \"instructions\": [\n    \"Tukar voucher pada halaman profil.\",\n    \"Gunakan kode saat checkout.\"\n  ]\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/vouchers",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"vouchers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all vouchers (all status)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/vouchers",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"vouchers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit voucher by id",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"isActive\": false}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/vouchers/690da326ba1ee358ce87f75f",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"vouchers",
+										"690da326ba1ee358ce87f75f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete voucher by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/vouchers/690da326ba1ee358ce87f75f",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"vouchers",
+										"690da326ba1ee358ce87f75f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "activate handler by id",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/vouchers/690da326ba1ee358ce87f75f/activate",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"vouchers",
+										"690da326ba1ee358ce87f75f",
+										"activate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deactivate handler by id",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/vouchers/690da326ba1ee358ce87f75f/deactivate",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"vouchers",
+										"690da326ba1ee358ce87f75f",
+										"deactivate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get history redemption by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/vouchers/69031e6f3f84647e96084928/redemptions",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"vouchers",
+										"69031e6f3f84647e96084928",
+										"redemptions"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "rewards",
+					"item": [
+						{
+							"name": "get all rewards (all status)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/rewards",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"rewards"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create reward",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"code\": \"milestone-60\",\n  \"name\": \"Milestone 60 Hari\",\n  \"description\": \"Bonus poin untuk streak kebiasaan selama 60 hari berturut-turut.\",\n  \"pointsReward\": 250,\n  \"targetDays\": 15,\n  \"isActive\": true,\n  \"image\": \"https://cdn.herbit.id/rewards/milestone-15d.png\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/rewards",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"rewards"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit voucher by id",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"isActive\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/rewards/690da52dba1ee358ce87f776",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"rewards",
+										"690da52dba1ee358ce87f776"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete reward by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/rewards/690da52dba1ee358ce87f776",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"rewards",
+										"690da52dba1ee358ce87f776"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get detail by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/rewards/69037be197f7e54e918b5936",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"rewards",
+										"69037be197f7e54e918b5936"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "redemptions",
+					"item": [
+						{
+							"name": "get all redemptions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/redemptions",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"redemptions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get detail by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/redemptions/69051431ee94ce6f65cf4ecd",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"redemptions",
+										"69051431ee94ce6f65cf4ecd"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "milestone claim",
+					"item": [
+						{
+							"name": "all milestone claim",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/milestone-claims",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"milestone-claims"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get detail by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/milestone-claims/690471a53977ba6248b836fa",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"milestone-claims",
+										"690471a53977ba6248b836fa"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "point history",
+					"item": [
+						{
+							"name": "get all list point history",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/points-history",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"points-history"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get detail by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/points-history/68fc8ecd879dcc0fd1697d61",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"points-history",
+										"68fc8ecd879dcc0fd1697d61"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "daily tasks",
+					"item": [
+						{
+							"name": "get all list daily task",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/daily",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"daily"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get detail by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/daily/690587c04a665287be13e6d8",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"daily",
+										"690587c04a665287be13e6d8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create daily task",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \" Tanam 1 tanaman\",\n    \"category\": \"eco-action\",\n    \"symbol\": \"🌱\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/daily",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"daily"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update daily task",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"testing\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/admin/daily/690da759ba1ee358ce87f7a3",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"daily",
+										"690da759ba1ee358ce87f7a3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete by id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/admin/daily/690da759ba1ee358ce87f7a3",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"admin",
+										"daily",
+										"690da759ba1ee358ce87f7a3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ecoenzim",
+					"item": [
+						{
+							"name": "acc photo progress",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"status\": \"verified\",\r\n  \"prePointsEarned\": 50\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/ecoenzim/uploads/690d7a8fd6a7d5adc4dec94f/verify",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ecoenzim",
+										"uploads",
+										"690d7a8fd6a7d5adc4dec94f",
+										"verify"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get uploads by project",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{base_url}}/ecoenzim/uploads/690d7a8fd6a7d5adc4dec94f",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ecoenzim",
+										"uploads",
+										"690d7a8fd6a7d5adc4dec94f"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login admin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// ===== Save admin_token & auto-switch role =====",
+									"let token;",
+									"const cookieHeader = pm.response.headers.get(\"Set-Cookie\");",
+									"",
+									"if (cookieHeader) {",
+									"  const cookieName = pm.collectionVariables.get(\"cookie_name\") || \"access_token\";",
+									"  const m = cookieHeader.match(new RegExp(`${cookieName}=([^;]+)`));",
+									"  if (m) token = m[1];",
+									"}",
+									"",
+									"// Fallback jika token ada di JSON",
+									"try {",
+									"  const json = pm.response.json();",
+									"  if (!token && (json?.token || json?.data?.token)) {",
+									"    token = json.token || json.data.token;",
+									"  }",
+									"} catch (e) {}",
+									"",
+									"if (token) {",
+									"  pm.collectionVariables.set(\"admin_token\", token);",
+									"  pm.collectionVariables.set(\"auth_role\", \"admin\"); // AUTO switch ke admin",
+									"  console.log(\"✅ admin_token saved & role switched to admin\");",
+									"} else {",
+									"  console.warn(\"⚠️ Admin token not found in response\");",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin@gmail.com\",\n  \"password\": \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "vouchers",
+					"item": [
+						{
+							"name": "preview voucher",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/vouchers/69031e6f3f84647e96084928/preview",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vouchers",
+										"69031e6f3f84647e96084928",
+										"preview"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "claim voucher",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"note\": \"klaim via mobile\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/vouchers/69031e6f3f84647e96084928/claim",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"vouchers",
+										"69031e6f3f84647e96084928",
+										"claim"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "home summary",
+					"item": [
+						{
+							"name": "get my home summary",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/users/home-summary",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"users",
+										"home-summary"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "profile summary",
+					"item": [
+						{
+							"name": "get my profile summary",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/users/profile-summary",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"users",
+										"profile-summary"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "rewards",
+					"item": [
+						{
+							"name": "claim reward",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/rewards/eco-7/claim",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"rewards",
+										"eco-7",
+										"claim"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "redemptions",
+					"item": [
+						{
+							"name": "get all my redemptions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/redemptions/me",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"redemptions",
+										"me"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get detail by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/redemptions/69051431ee94ce6f65cf4ecd",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"redemptions",
+										"69051431ee94ce6f65cf4ecd"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "daily task",
+					"item": [
+						{
+							"name": "get user's checklist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/checklists/today",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"checklists",
+										"today"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get leaves",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/leaves",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"leaves"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get fruits",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/fruits",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"fruits"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get tree",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/tree",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"tree"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get progress weekly",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/progress/weekly",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"progress",
+										"weekly"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "complete task",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/checklists/6908b932ef4ac94ec748be99/complete",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"checklists",
+										"6908b932ef4ac94ec748be99",
+										"complete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "uncheck task",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/checklists/6908b932ef4ac94ec748be99/uncheck",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"checklists",
+										"6908b932ef4ac94ec748be99",
+										"uncheck"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "claim fruits",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/fruits/6908bdd8ef4ac94ec748bef8/claim",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"fruits",
+										"6908bdd8ef4ac94ec748bef8",
+										"claim"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "update username",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"username\": \"@anggianggianggi\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/users/username",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"users",
+										"username"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update email",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"anggi@mail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/users/email",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"users",
+										"email"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "post photo profile",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "photo",
+											"type": "file",
+											"src": "/Users/anggi/Downloads/Colorful Cute Trophy Good Job Reward Sticker (1).png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{base_url}}/users/profile-photo",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"users",
+										"profile-photo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get photo profile",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/users/profile-photo/690818fd1435a772717c82e2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"users",
+										"profile-photo",
+										"690818fd1435a772717c82e2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "game",
+					"item": [
+						{
+							"name": "start",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{vault:authorization-secret}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"setiyawati324@gmail.com\"\r\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/game/start",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"game",
+										"start"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "complete game session",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{base_url}}/game/complete/69092d75f8328da5038163b4",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"game",
+										"complete",
+										"69092d75f8328da5038163b4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "game reward",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{base_url}}/game/claim/69092d75f8328da5038163b4",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"game",
+										"claim",
+										"69092d75f8328da5038163b4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "game reward status",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{}"
+								},
+								"url": {
+									"raw": "{{base_url}}/game/reward-status/2025-11-04",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"game",
+										"reward-status",
+										"2025-11-04"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"setiyawati324@gmail.com\",\n  \"password\": \"12345678\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/auth/login",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create admin",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"email\": \"admin@gmail.com\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/auth/create-admin",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"auth",
+										"create-admin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "current user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/auth/me",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"auth",
+										"me"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "password",
+					"item": [
+						{
+							"name": "forgot password",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"email\": \"melisa@gmail.com\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/auth/forgot-password",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"auth",
+										"forgot-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "reset password",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"token\":\"8ea2695089cd30d11e7475d497058e567717cd33af3939358c21634df1dbbdc3\",\n    \"new_password\": \"admin1234\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/auth/forget-password",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"auth",
+										"forget-password"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "notifications",
+					"item": [
+						{
+							"name": "get notifications",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"anggi@mail.com\",\n  \"password\": \"admin123\"\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/notifications",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notifications"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete notifications",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"anggi@mail.com\",\n  \"password\": \"admin123\"\n}"
+								},
+								"url": {
+									"raw": "{{base_url}}/notifications/clear-all",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"notifications",
+										"clear-all"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ecoenzim",
+					"item": [
+						{
+							"name": "get ecoenzim",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/ecoenzim/projects",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ecoenzim",
+										"projects"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get ecoenzim by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/ecoenzim/projects/690b611ce825dfa35b16c33a",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ecoenzim",
+										"projects",
+										"690b611ce825dfa35b16c33a"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create ecoenzim project",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userId\": \"672a4d9e8f0a3f57c0123abc\",\r\n  \"organicWasteWeight\": 5,\r\n  \"started\": true,\r\n  \"startedAt\": \"2025-11-06T08:00:00.000Z\",\r\n  \"startDate\": \"2025-11-06T00:00:00.000Z\",\r\n  \"endDate\": \"2026-02-06T00:00:00.000Z\",\r\n  \"status\": \"ongoing\",\r\n  \"prePointsEarned\": 10,\r\n  \"points\": 0,\r\n  \"canClaim\": false,\r\n  \"isClaimed\": false,\r\n  \"claimedAt\": null\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/ecoenzim/projects",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ecoenzim",
+										"projects"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "start project",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"organicWasteWeight\": 2.5,\r\n  \"status\": \"ongoing\",\r\n  \"prePointsEarned\": 5,\r\n  \"points\": 10,\r\n  \"canClaim\": false,\r\n  \"isClaimed\": false\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/ecoenzim/projects/690c6f809a1b095dbcefe219",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ecoenzim",
+										"projects",
+										"690c6f809a1b095dbcefe219"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete Project",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"organicWasteWeight\": 1\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/ecoenzim/projects/690c6f809a1b095dbcefe219",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ecoenzim",
+										"projects",
+										"690c6f809a1b095dbcefe219"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "upload progress",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"ecoenzimProjectId\": \"690c6f809a1b095dbcefe219\",\r\n  \"monthNumber\": 1,\r\n  \"photoUrl\": \"https://res.cloudinary.com/yourimage.jpg\",\r\n  \"uploadedDate\": \"2025-11-04T10:57:11.021Z\",\r\n  \"prePointsEarned\": 5,\r\n  \"status\": \"pending\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/ecoenzim/uploads",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ecoenzim",
+										"uploads"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "claim Points",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"claimedAt\": \"2025-11-06T10:00:00.000Z\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/ecoenzim/projects/690c6f809a1b095dbcefe219/claim",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"ecoenzim",
+										"projects",
+										"690c6f809a1b095dbcefe219",
+										"claim"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"// ===== HERBIT Auto-Cookie Injector =====",
+					"(function () {",
+					"  const cookieName = pm.collectionVariables.get(\"cookie_name\") || \"access_token\";",
+					"  const role = (pm.collectionVariables.get(\"auth_role\") || \"user\").toLowerCase();",
+					"",
+					"  const userToken  = pm.collectionVariables.get(\"user_token\");",
+					"  const adminToken = pm.collectionVariables.get(\"admin_token\");",
+					"  const token = role === \"admin\" ? adminToken : userToken;",
+					"",
+					"  // Bypass per-request bila perlu: set local var \"noAuthCookie\" = true",
+					"  const noAuthCookie = pm.variables.get(\"noAuthCookie\");",
+					"",
+					"  // Bersihkan header Cookie agar tidak dobel",
+					"  pm.request.headers.remove(\"Cookie\");",
+					"",
+					"  if (!noAuthCookie && token) {",
+					"    pm.request.headers.add({",
+					"      key: \"Cookie\",",
+					"      value: `${cookieName}=${token}`",
+					"    });",
+					"    console.log(`🍪 Injected Cookie for role: ${role}`);",
+					"  } else {",
+					"    console.warn(\"⚠️ Cookie not injected (missing token or bypassed).\");",
+					"  }",
+					"})();"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "user_token",
+			"value": ""
+		},
+		{
+			"key": "auth_role",
+			"value": ""
+		},
+		{
+			"key": "admin_token",
+			"value": ""
+		}
+	]
+}
